@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:background="@drawable/dialog_background"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:weightSum="10"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/dialog_title"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="@font/app_font"
+                android:gravity="center"
+                android:text="Chọn loại thẻ"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="48dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdbViettel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/appTheme"
+            android:checked="true"
+            android:fontFamily="@font/app_font"
+            android:gravity="center"
+            android:text="Viettel"
+            android:textColor="@color/appTheme"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbVinaphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/appTheme"
+            android:fontFamily="@font/app_font"
+            android:gravity="center"
+            android:text="Vinaphone"
+            android:textColor="@color/appTheme"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbMobifone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/appTheme"
+            android:fontFamily="@font/app_font"
+            android:gravity="center"
+            android:text="Mobifone"
+            android:textColor="@color/appTheme"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rdbVietnamobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/appTheme"
+            android:fontFamily="@font/app_font"
+            android:gravity="center"
+            android:text="Vietnamobile"
+            android:textColor="@color/appTheme"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/app_font"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
